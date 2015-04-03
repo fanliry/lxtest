@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+
+	
+    <class name="com.wms3.bms.standard.entity.base.Labout"  
+           table="labout"
+           dynamic-update="true"
+           dynamic-insert="true">
+        <id name="m_laboutId" type="string" 
+            unsaved-value="null">
+            <column name="laboutId" sql-type="char(38)" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>        
+        <property name="m_laboutNumber">
+            <column name="laboutNumber" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_laboutName">
+            <column name="laboutName" sql-type="string" 
+                    not-null="false"/>
+        </property>
+      
+        <property name="m_marker" >
+        <column name="marker" sql-type="string" 
+                    not-null="false"/>
+        </property>
+         <property name="m_duty" >
+        <column name="duty" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_describe">
+            <column name="describe" sql-type="string" 
+                    not-null="false"/>
+        </property>
+     </class>	
+</hibernate-mapping>

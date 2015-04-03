@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.base.BaseLotDetail"  
+           table="base_lot_detail"
+           dynamic-update="true"
+           dynamic-insert="true"
+           >	
+        <id name="m_strLotdetailid" type="string" 
+            unsaved-value="null">
+            <column name="lotdetailid" sql-type="string" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>
+        
+        <property name="m_strLotid">
+            <column name="lotid" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strAttname">
+            <column name="attname" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strAttcode">
+            <column name="attcode" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strLotatt_flag">
+            <column name="lotatt_flag" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strLottype">
+            <column name="lottype" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strLottypevalue">
+            <column name="lottypevalue" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strLotsearch">
+            <column name="lotsearch" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strRemark">
+            <column name="remark" sql-type="string" 
+                    not-null="false"/>
+        </property>
+     </class>
+</hibernate-mapping>
+

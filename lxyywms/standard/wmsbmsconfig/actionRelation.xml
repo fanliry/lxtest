@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<!-- 执行接口相关要素定义
+     标签说明：
+-->
+<config>
+  <!--////////////////////////////////////项目的功能模块/////////////////////////////// -->
+
+  <!--1:下载文件**************************************************** -->
+  <relation>
+    <actionCode>downFileAction</actionCode>
+    <name>下载保存文件</name>
+    <class>com.wms3.bms.standard.action.report.DownFileAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>    
+  </relation>  
+  <!--************************************************************ -->
+  <!--导入文件**************************************************** -->
+  <relation>
+    <actionCode>readFileAction</actionCode>
+    <name>下载保存文件</name>
+    <class>com.wms3.bms.standard.action.report.ReadFileAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>    
+  </relation>  
+  <!--************************************************************ -->
+
+  <!--通用分页**************************************************** -->
+  <relation>
+    <actionCode>commonPaging</actionCode>
+    <name>通用分页</name>
+    <class>com.ricosoft.common.pagination.CommonPagingAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation> 
+  <relation>
+    <actionCode>rfJobAction</actionCode> 
+    <name>RF生成作业</name>
+    <class>com.wms3.bms.standard.action.rf.RFJobAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <relation>
+    <actionCode>RFCheckAction</actionCode> 
+    <name>RF盘点结果录入</name>
+    <class>com.wms3.bms.standard.action.rf.RFCheckAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- ************************入库管理******************************** -->
+  <!--入库收货单据**************************************************** -->
+  <relation>
+    <actionCode>inBoundREAction</actionCode> 
+    <name>入库收货单据管理</name>
+    <class>com.wms3.bms.standard.action.inbound.InBoundReceiptAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <relation>
+    <actionCode>InBoundRequestAction</actionCode> 
+    <name>入库申请单管理</name>
+    <class>com.wms3.bms.standard.action.inbound.lxyy.InBoundRequestAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <relation>
+    <actionCode>OtherInBoundRequestAction</actionCode> 
+    <name>入库申请单管理</name>
+    <class>com.wms3.bms.standard.action.inbound.lxyy.OtherInBoundRequestAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <relation>
+    <actionCode>NeedCheckAction</actionCode> 
+    <name>异常管理</name>
+    <class>com.wms3.bms.standard.action.inbound.lxyy.NeedCheckAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--入库单据**************************************************** -->
+  <relation>
+    <actionCode>inBoundAction</actionCode> 
+    <name>入库单据管理</name>
+    <class>com.wms3.bms.standard.action.inbound.InBoundAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <relation>
+    <actionCode>inBoundPoAction</actionCode> 
+    <name>PO管理</name>
+    <class>com.wms3.bms.standard.action.inbound.lxyy.InBoundPoAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <relation>
+    <actionCode>inBoundActionlxyy</actionCode> 
+    <name>入库单据管理新加</name>
+    <class>com.wms3.bms.standard.action.inbound.lxyy.InBoundAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <relation>
+    <actionCode>OtherInBoundAction</actionCode> 
+    <name>入库单据管理</name>
+    <class>com.wms3.bms.standard.action.inbound.lxyy.OtherInBoundAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--收货**************************************************** -->
+  <relation>
+    <actionCode>receiptAction</actionCode> 
+    <name>收货</name>
+    <class>com.wms3.bms.standard.action.inbound.ReceiptAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--上架**************************************************** -->
+  <relation>
+    <actionCode>putawayAction</actionCode> 
+    <name>上架</name>
+    <class>com.wms3.bms.standard.action.inbound.PutawayAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <!--入库维护**************************************************** -->
+  <relation>
+    <actionCode>inBoundRKWHAction</actionCode> 
+    <name>入库维护</name>
+    <class>com.wms3.bms.standard.action.inbound.InBoundRKWHAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--入库查询**************************************************** -->
+  <relation>
+    <actionCode>inBoundJobAction</actionCode> 
+    <name>入库查询</name>
+    <class>com.wms3.bms.standard.action.inbound.InBoundJobAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  <!--入/出库作业**************************************************** -->
+  <relation>
+    <actionCode>jobAction</actionCode> 
+    <name>入/出库作业</name>
+    <class>com.wms3.bms.standard.action.job.JobAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  
+  
+  <!-- ************************出库管理******************************** -->
+  <!--出库单据**************************************************** -->
+  <relation>
+    <actionCode>outBoundAction</actionCode> 
+    <name>出库单据管理</name>
+    <class>com.wms3.bms.standard.action.outbound.OutBoundAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+    <relation>
+    <actionCode>SaleFormAction</actionCode> 
+    <name>出库订单管理</name>
+    <class>com.wms3.bms.standard.action.outerInterface.SaleFormAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  <!--出库查询**************************************************** -->
+  <relation>
+    <actionCode>outBoundJobAction</actionCode> 
+    <name>出库查询</name>
+    <class>com.wms3.bms.standard.action.outbound.OutBoundJobAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--出库分配**************************************************** -->
+  <relation>
+    <actionCode>allocationAction</actionCode> 
+    <name>出库分配</name>
+    <class>com.wms3.bms.standard.action.outbound.AllocationAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--拣货**************************************************** -->
+  <relation>
+    <actionCode>pickAction</actionCode> 
+    <name>拣货</name>
+    <class>com.wms3.bms.standard.action.outbound.PickAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--发货**************************************************** -->
+  <relation>
+    <actionCode>sendAction</actionCode> 
+    <name>发货</name>
+    <class>com.wms3.bms.standard.action.outbound.SendAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  
+  <!-- ************************库存管理******************************** -->
+  <!--库存查询**************************************************** -->
+  <relation>
+    <actionCode>inventoryAction</actionCode> 
+    <name>库存查询</name>
+    <class>com.wms3.bms.standard.action.inventory.InventoryAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--库存盘点**************************************************** -->
+  <relation>
+    <actionCode>inventoryCheckAction</actionCode> 
+    <name>库存盘点</name>
+    <class>com.wms3.bms.standard.action.inventory.lxyy.InventoryCheckAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  <relation>
+    <actionCode>inventoryAdjustAction</actionCode> 
+    <name>库存调整</name>
+    <class>com.wms3.bms.standard.action.inventory.lxyy.InventoryAdjustAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <relation>
+    <actionCode>inventoryMoveAction</actionCode> 
+    <name>库存移动</name>
+    <class>com.wms3.bms.standard.action.inventory.InventoryMoveAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <relation>
+    <actionCode>productAdjustAction</actionCode> 
+    <name>物品调整</name>
+    <class>com.wms3.bms.standard.action.inventory.ProductAdjustAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <relation>
+    <actionCode>inventotyNeedCheckAction</actionCode> 
+    <name>需盘点管理</name>
+    <class>com.wms3.bms.standard.action.inventory.InventotyNeedCheckAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+   <!-- ************************调度管理******************************** -->
+  <relation>
+    <actionCode>ScheduleTaskAction</actionCode> 
+    <name>指令管理</name>
+    <class>com.wms3.bms.standard.action.scheduletask.ScheduleTaskAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <!--************************************************************ -->
+  
+   <!-- ************************查询统计******************************** -->
+  <relation>
+    <actionCode>CXInOutJobAction</actionCode> 
+    <name>出入库流水查询</name>
+    <class>com.wms3.bms.standard.action.report.CXInOutJobAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+      <!-- ************************KPI分析******************************** -->
+   <relation>
+    <actionCode>InAnalysisAction</actionCode> 
+    <name>入库均匀分析</name>
+    <class>com.wms3.bms.standard.action.Analysis.InAnalysisAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+
+   <!-- ************************质检管理******************************** -->
+  <!--抽检**************************************************** -->
+    <relation>
+    <actionCode>qualityAction</actionCode> 
+    <name>抽检</name>
+    <class>com.wms3.bms.standard.action.quality.QualityAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  <relation>
+    <actionCode>QualityNewAction</actionCode> 
+    <name>抽检放行</name>
+    <class>com.wms3.bms.standard.action.quality.QualityNewAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  <relation>
+    <actionCode>inventoryQualityAction</actionCode> 
+    <name>状态转换</name>
+    <class>com.wms3.bms.standard.action.quality.InventoryQualityAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--库存冻结/释放**************************************************** -->
+  <relation>
+    <actionCode>inventoryHoldAction</actionCode> 
+    <name>库存冻结/释放</name>
+    <class>com.wms3.bms.standard.action.inventory.InventoryHoldAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  
+  <!-- ************************规则管理******************************** -->
+  <!--上架规则**************************************************** -->
+  <relation>
+    <actionCode>putawayRuleAction</actionCode> 
+    <name>上架规则</name>
+    <class>com.wms3.bms.standard.action.rule.PutawayRuleAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--分配规则**************************************************** -->
+  <relation>
+    <actionCode>allocationRuleAction</actionCode> 
+    <name>分配规则</name>
+    <class>com.wms3.bms.standard.action.rule.AllocationRuleAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--补货规则**************************************************** -->
+  <relation>
+    <actionCode>replenishRuleAction</actionCode> 
+    <name>补货规则</name>
+    <class>com.wms3.bms.standard.action.rule.ReplenishRuleAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  
+  <!-- ************************基础信息******************************** -->
+  
+  <!--数据字典管理**************************************************** -->
+  <relation>
+	    <actionCode>mapQuery</actionCode>
+	    <name>数据字典</name>
+	    <class>com.wms3.bms.standard.action.base.MapQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+</relation>
+
+  <relation>
+	    <actionCode>inoutControlAction</actionCode>
+	    <name>出入库卡控 管理</name>
+	    <class>com.wms3.bms.standard.action.base.InoutControlAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+</relation>
+
+		<relation>
+		    <actionCode>branchMeans</actionCode>
+		    <name>部门管理</name>
+		    <class>com.wms3.bms.standard.action.base.BranchQueryAction</class>
+		    <target>
+		        <success></success>
+		   		<fail></fail>
+		    </target>
+	   </relation>
+  	   <relation>
+		  	<actionCode>createCode</actionCode>
+		    <name>生成编号</name>
+		    <class>com.wms3.bms.standard.action.base.CreateCodeAction</class>
+		    <target>
+		        <success></success>
+		   		<fail></fail>
+		    </target>
+	   </relation> 
+	   <relation>
+		    <actionCode>addBranch</actionCode>
+		    <name>添加部门</name>
+		    <class>com.wms3.bms.standard.action.base.BranchAddAction</class>
+		    <target>
+		        <success></success>
+		   		<fail></fail>
+		    </target>
+	   </relation>
+	   <relation>
+		    <actionCode>updBranch</actionCode>
+		    <name>修改部门</name>
+		    <class>com.wms3.bms.standard.action.base.BranchUpdAction</class>
+		    <target>
+		        <success></success>
+		   		<fail></fail>
+		    </target>
+		</relation>
+		
+  		<relation>
+	  <actionCode>delete</actionCode>
+	    <name>删除</name>
+	    <class>com.wms3.bms.standard.action.base.DeleteAtion</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+  	   <relation>
+	  <actionCode>clientFile</actionCode>
+	    <name>客户管理</name>
+	    <class>com.wms3.bms.standard.action.base.ClientQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	    <actionCode>customerMgrAction</actionCode>
+	    <name>客户资料管理</name>
+	    <class>com.wms3.bms.standard.action.base.CustomerMgrAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>    
+	  </relation>
+	  
+	  
+	  <relation>
+	    <actionCode>storeHouseAdminster</actionCode>
+	    <name>仓库管理员资料</name>
+	    <class>com.wms3.bms.standard.action.base.SortHouseQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	    <actionCode>addStore</actionCode>
+	    <name>添加仓库管理员</name>
+	    <class>com.wms3.bms.standard.action.base.SortAddAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	    </relation>
+	    
+	    <relation>
+	    <actionCode>updStore</actionCode>
+	    <name>修改仓库管理员</name>
+	    <class>com.wms3.bms.standard.action.base.SortUpdAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	    </relation>
+	  
+	  <relation>
+	    <actionCode>extractor</actionCode>
+	    <name>抽检员资料管理</name>
+	    <class>com.wms3.bms.standard.action.base.ExtQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	    <actionCode>addExt</actionCode>
+	    <name>添加抽检员资料</name>
+	    <class>com.wms3.bms.standard.action.base.ExtAddAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	    <relation>
+	    <actionCode>updExt</actionCode>
+	    <name>修改抽检员资料</name>
+	    <class>com.wms3.bms.standard.action.base.ExtUpdAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	  <actionCode>labout</actionCode>
+	    <name>卸载工管理</name>
+	    <class>com.wms3.bms.standard.action.base.LaboutQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	  <actionCode>addLabout</actionCode>
+	    <name>添加卸载工</name>
+	    <class>com.wms3.bms.standard.action.base.LaboutAddAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  <relation>
+	  <actionCode>updLabout</actionCode>
+	    <name>修改卸载工</name>
+	    <class>com.wms3.bms.standard.action.base.LaboutUpdAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	    <actionCode>meter</actionCode>
+	    <name>单位资料管理</name>
+	    <class>com.wms3.bms.standard.action.base.MeterQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  
+	  <relation>
+	    <actionCode>addMeter</actionCode>
+	    <name>添加单位资料管理</name>
+	    <class>com.wms3.bms.standard.action.base.MeterAddAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	    <actionCode>updMeter</actionCode>
+	    <name>修改单位资料</name>
+	    <class>com.wms3.bms.standard.action.base.MeterUpdAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  
+	  <relation>
+	  <actionCode>workshop</actionCode>
+	    <name>车间管理</name>
+	    <class>com.wms3.bms.standard.action.base.WorkshopQueryAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+	  <relation>
+	    <actionCode>updWorkshop</actionCode>
+	    <name>车间添加</name>
+	    <class>com.wms3.bms.standard.action.base.WorkshopUpdAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	
+	  
+	  <relation>
+	    <actionCode>addWorkshop</actionCode>
+	    <name>车间添加</name>
+	    <class>com.wms3.bms.standard.action.base.WorkshopAddAction</class>
+	    <target>
+	        <success></success>
+	   		<fail></fail>
+	    </target>
+	  </relation>
+	  
+  <!--仓库管理**************************************************** -->
+  <relation>
+    <actionCode>baseWarehouseAction</actionCode> 
+    <name>仓库管理</name>
+    <class>com.wms3.bms.standard.action.base.WarehouseAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--库区管理**************************************************** -->
+  <relation>
+    <actionCode>baseWhareaAction</actionCode> 
+    <name>库区管理</name>
+    <class>com.wms3.bms.standard.action.base.WhAreaAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+   <relation>
+    <actionCode>baseWhareaVirtualAction</actionCode> 
+    <name>虚拟库区管理</name>
+    <class>com.wms3.bms.standard.action.base.WhAreaVirtualAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--货区管理**************************************************** -->
+  <relation>
+    <actionCode>baseCargoareaAction</actionCode> 
+    <name>货区管理</name>
+    <class>com.wms3.bms.standard.action.base.CargoAreaAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--出库设置**************************************************** -->
+  <relation>
+    <actionCode>OutSetAction</actionCode> 
+    <name>出库设置</name>
+    <class>com.wms3.bms.standard.action.base.OutSetAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--巷道管理**************************************************** -->
+  <relation>
+    <actionCode>baseAlleyAction</actionCode> 
+    <name>货区管理</name>
+    <class>com.wms3.bms.standard.action.base.AlleyAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--货位管理**************************************************** -->
+  <relation>
+    <actionCode>baseCargoSpaceAction</actionCode> 
+    <name>货位管理</name>
+    <class>com.wms3.bms.standard.action.base.CargoSpaceAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--类型管理**************************************************** -->
+  <relation>
+    <actionCode>baseTypeAction</actionCode> 
+    <name>类型管理</name>
+    <class>com.wms3.bms.standard.action.base.TypeAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--部门管理**************************************************** -->
+  <relation>
+    <actionCode>baseDepartmentAction</actionCode> 
+    <name>部门管理</name>
+    <class>com.wms3.bms.standard.action.base.DepartmentAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--客户管理**************************************************** -->
+  <relation>
+    <actionCode>baseCustomerAction</actionCode> 
+    <name>客户管理</name>
+    <class>com.wms3.bms.standard.action.base.CustomerAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--批次管理**************************************************** -->
+  <relation>
+    <actionCode>baseBatchAction</actionCode> 
+    <name>批次管理</name>
+    <class>com.wms3.bms.standard.action.base.BatchAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--设备管理**************************************************** -->
+  <relation>
+    <actionCode>baseDeviceAction</actionCode> 
+    <name>设备管理</name>
+    <class>com.wms3.bms.standard.action.base.DeviceAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--条形码管理**************************************************** -->
+  <relation>
+    <actionCode>baseBarcodeAction</actionCode> 
+    <name>条形码管理</name>
+    <class>com.wms3.bms.standard.action.base.BarcodeAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--包装管理**************************************************** -->
+  <relation>
+    <actionCode>basePackageAction</actionCode> 
+    <name>包装管理</name>
+    <class>com.wms3.bms.standard.action.base.PackageAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--产品管理**************************************************** -->
+  <relation>
+    <actionCode>baseProductAction</actionCode> 
+    <name>产品管理</name>
+    <class>com.wms3.bms.standard.action.base.ProductAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--产品类别管理**************************************************** -->
+  <relation>
+    <actionCode>baseProducttypeAction</actionCode> 
+    <name>产品类别管理</name>
+    <class>com.wms3.bms.standard.action.base.ProducttypeAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--班次管理**************************************************** -->
+  <relation>
+    <actionCode>baseShiftAction</actionCode> 
+    <name>班次管理</name>
+    <class>com.wms3.bms.standard.action.base.ShiftAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--批次属性管理**************************************************** -->
+  <relation>
+    <actionCode>baseLotAction</actionCode> 
+    <name>批次属性管理</name>
+    <class>com.wms3.bms.standard.action.base.LotAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+  <!--批次属性设置管理**************************************************** -->
+  <relation>
+    <actionCode>baseLotSetAction</actionCode> 
+    <name>批次属性设置管理</name>
+    <class>com.wms3.bms.standard.action.base.LotSetAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!--************************************************************ -->
+    <!--周转箱**************************************************** -->
+  <relation>
+    <actionCode>baseCartonAction</actionCode> 
+    <name>周转箱</name>
+    <class>com.wms3.bms.standard.action.base.CartonAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  
+  <!--************************************************************ -->
+  
+  <!--************************************************************ -->
+   <!-- *****系统登陆****-->
+  <relation>
+    <actionCode>UserLoginAction</actionCode>
+    <name>系统登陆</name>
+    <class>com.wms3.bms.standard.action.sys.UserLoginAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+     <!-- 系统管理********** -->
+  <!-- 系统管理********** -->
+    <!-- 1:角色管理 -->
+  <relation>
+    <actionCode>roleInfoMgr</actionCode>
+    <name>角色管理</name>
+    <class>com.ricosoft.action.competenceMgr.RoleAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+   <!-- 2:用户组管理 -->
+  <relation>
+    <actionCode>userGroupMgr</actionCode>
+    <name>用户组管理</name>
+    <class>com.ricosoft.action.competenceMgr.UserGroupAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <!-- 3:日志管理 -->
+  <relation>
+    <actionCode>sysLogMgr</actionCode>
+    <name>日志管理</name>
+    <class>com.ricosoft.action.competenceMgr.SysLogAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <!-- 4:模块管理 -->
+  <relation>
+    <actionCode>moduleOpMgr</actionCode>
+    <name>模块管理</name>
+    <class>com.ricosoft.action.competenceMgr.ModuleOpAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+    <!-- 5:用户管理 -->
+  <relation>
+    <actionCode>userInfoMgr</actionCode>
+    <name>用户管理</name>
+    <!-- <class>com.wms3.bms.standard.action.sys.UserAction</class>-->
+    <class>com.ricosoft.action.competenceMgr.UserAction</class> 
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- **************** -->
+  <!-- *****用户管理(yaohuabin)****-->
+  <relation>
+    <actionCode>UserAction</actionCode>
+    <name>用户管理</name>
+    <class>com.wms3.bms.standard.action.sys.UserAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- *****班次管理(yaohuabin)****-->
+  <!-- *****用户管理(liuxh)****-->
+  <relation>
+    <actionCode>dictionaryAction</actionCode>
+    <name>字典中心</name>
+    <class>com.wms3.bms.standard.action.base.DictionaryAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- *****盘点查询(liuxh)****-->
+  <relation>
+    <actionCode>InventoryCheckSearchAction</actionCode>
+    <name>盘点查询</name>
+    <class>com.wms3.bms.standard.action.inventory.InventoryCheckSearchAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- *****盘点查询(liuxh)****-->
+  <!-- *****库存交易(liuxh)****-->
+  <relation>
+    <actionCode>inventoryTransactionAction</actionCode>
+    <name>库存交易</name>
+    <class>com.wms3.bms.standard.action.inventory.InventoryTransactionAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- *****库存交易(liuxh)****-->
+  <!-- *****入库维护****-->
+  <relation>
+    <actionCode>InjobSafeguardAction</actionCode>
+    <name>库存维护</name>
+    <class>com.wms3.bms.standard.action.rf.InjobSafeguardAction</class>
+    <target>
+        <success></success>
+   		<fail></fail>
+    </target>
+  </relation>
+  <!-- *****入库维护****-->
+  </config>
+

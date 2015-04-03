@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.quality.Release" table="release_form" >
+        <id name="Releaseid" type="string">
+            <column name="Releaseid" length="32" />
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="Productid" type="string">
+            <column name="Productid" length="32" />
+        </property>
+        <property name="lotinfo" type="string">
+            <column name="lotinfo" length="32" />
+        </property>
+        <property name="Qualityid" type="string">
+            <column name="Qualityid" length="32" />
+        </property>
+        <property name="createtime" type="string">
+            <column name="createtime" length="32" />
+        </property>
+        <property name="opManId" type="string">
+            <column name="opManId" length="32" />
+        </property>
+        
+        <property name="ProductName" formula="(select t.productname from base_product t where t.productid=Productid)"/>
+        <property name="Productcode" formula="(select t.productCode from base_product t where t.productid=Productid)"/>
+     </class>
+</hibernate-mapping>
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	<!-- Oracle  -->
+	<!--
+		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+	-->
+	<!-- SQL Server  -->
+
+	<property name="dialect">
+		org.hibernate.dialect.SQLServerDialect
+	</property>
+
+	<!-- mysql  -->
+	<!-- 
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	-->
+	<property name="hibernate.show_sql">true</property>
+	<property name="hibernate.use_outer_join">true</property>
+	<property name="hibernate.jdbc.batch_size">50</property>
+
+	<!--***基本信息************************ -->
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseAlley.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseBarcode.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseBatch.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseBatchmean.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseBatchrule.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseCargoarea.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseCargospace.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseCarton.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseCustomer.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseDepartment.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseDevice.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseLot.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseLotDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseLotSet.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BasePackage.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BasePackageMastermesg.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseProduct.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseProducttype.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseSysconfig.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseType.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseWarehouse.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseWharea.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseWhareaVirtual.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseShift.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseSeq.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseShiftconfig.hbm.xml" />
+	<mapping resource="com/wms3/bms/standard/entity/base/Map.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BranchMeans.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/ClientFile.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/StoreHouseAdminster.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/Extractor.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/Labout.hbm.xml" />
+	<mapping resource="com/wms3/bms/standard/entity/base/Meter.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/Workshop.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/HisProduct.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/base/BaseInoutControl.hbm.xml" />
+
+	<!--***入库************************ -->
+	<mapping
+		resource="com/wms3/bms/standard/entity/inbound/lxyy/InboundHeader.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inbound/lxyy/InboundDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inbound/lxyy/InboundPoHeader.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inbound/lxyy/InboundPoDetail.hbm.xml" />
+
+
+	<!--***出库************************ -->
+	<mapping
+		resource="com/wms3/bms/standard/entity/outbound/OutboundInvoiceHeader.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/outbound/OutboundInvoiceDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/outbound/OutboundSoftallocation.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/outbound/OutboundCrosscheck.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/outbound/OutboundPacking.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/outerInterface/SaleForm.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/outerInterface/SaleFormDetail.hbm.xml" />
+		
+
+	<!--***作业************************ -->
+	<mapping
+		resource="com/wms3/bms/standard/entity/job/lxyy/InoutJob.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/job/lxyy/InoutJobdetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/job/OutExjob.hbm.xml" />
+
+	<mapping
+		resource="com/wms3/bms/standard/entity/schedule/ScheduleTask.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/schedule/IdxAsrsSend.hbm.xml" />
+
+	<!--***库存************************ -->
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryStorage.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryCheckRequest.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryCheckTask.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryCheckResult.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/InventoryNeedcheck.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryAdjustHeader.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryAdjustDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/InventoryTransferHeader.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/InventoryTransferDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/InventoryQualityResult.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/InventoryQualityResultDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryHold.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryMovementDetail.hbm.xml" />
+	<mapping
+		resource="com/wms3/bms/standard/entity/inventory/lxyy/InventoryMovementHeader.hbm.xml" />
+		
+
+
+	<!--***权限************************ -->
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/RoleInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/UserGroupInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/SystemLogInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/ModuleOpInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/UserInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/UserModuleOpInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/UserRoleInfo.hbm.xml" />
+	<mapping
+		resource="com/ricosoft/entity/competenceMgr/RoleModuleOpInfo.hbm.xml" />
+	
+	<!--***放行************************ -->
+	<mapping
+		resource="com/wms3/bms/standard/entity/quality/Release.hbm.xml" />
+
+</session-factory>
+</hibernate-configuration>

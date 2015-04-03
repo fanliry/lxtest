@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<!--  测试 -->
+	<servlet>  
+		<servlet-name>ServletRedirector</servlet-name>   
+		<servlet-class>org.apache.cactus.server.ServletTestRedirector</servlet-class>   
+	</servlet>
+	<servlet>
+		<servlet-name>ServletTestRunner</servlet-name>   
+		<servlet-class>org.apache.cactus.server.runner.ServletTestRunner</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletRedirector</servlet-name>
+		<url-pattern>/ServletRedirector</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletTestRunner</servlet-name>
+		<url-pattern>/ServletTestRunner</url-pattern>
+	</servlet-mapping>
+	  <filter>
+	     <filter-name>SecurityFilter</filter-name>
+	     <filter-class>com.wms3.bms.standard.security.SecurityFilter</filter-class>
+	  </filter>
+	  <filter-mapping>
+	     <filter-name>SecurityFilter</filter-name>
+	     <url-pattern>*.jsp</url-pattern>
+	  </filter-mapping>
+	<!--  测试 -->
+	
+	
+	
+	<servlet>
+		<servlet-name>BMSService</servlet-name>
+		<servlet-class>com.wms3.bms.standard.service.BMSService</servlet-class>		
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>standard/wmsbmsconfig</param-value>
+		</init-param>		
+		<init-param>
+			<param-name>dbname</param-name>
+			<param-value>wmsbmsconfig.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>BMSService</servlet-name>
+		<url-pattern>/BMSService</url-pattern>
+	</servlet-mapping>
+	
+	<!--条形码 -->
+	<servlet>  
+		<servlet-name>BarcodeServlet</servlet-name>  
+    	<servlet-class>org.krysalis.barcode4j.servlet.BarcodeServlet</servlet-class>  
+	</servlet>  
+	<servlet-mapping>  
+   		 <servlet-name>BarcodeServlet</servlet-name>  
+    	<url-pattern>/barcode</url-pattern>  
+	</servlet-mapping> 
+	<!--货位树 -->
+	<servlet>
+      <servlet-name>treenodes</servlet-name>
+      <servlet-class>com.wms3.bms.standard.action.base.ajaxTree.TreeNodes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>treenodes</servlet-name>
+      <url-pattern>/treenodes</url-pattern>
+  	</servlet-mapping>
+	<!-- 图形报表 -->
+	<servlet>
+    	<servlet-name>DisplayChart</servlet-name>
+    	<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+  	</servlet>
+ 	<servlet-mapping>
+  		<servlet-name>DisplayChart</servlet-name>
+  		<url-pattern>/DisplayChart</url-pattern>
+ 	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	
+	<!--DWR -->
+	<servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>true</param-value>
+		</init-param>		
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+		
+	<!--设置超时 单位(分钟) -->
+	<session-config>
+		<session-timeout>300</session-timeout> 
+	</session-config>
+</web-app>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.base.BaseShift"  
+           table="base_shift"
+           dynamic-update="true"
+           dynamic-insert="true"
+           >	
+        <id name="m_strShiftId" type="string" 
+            unsaved-value="null">
+            <column name="shiftid" sql-type="string" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>        
+        <property name="m_strShiftDate">
+            <column name="shiftdate" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strDayNight">
+            <column name="daynight" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strOndutyMen">
+            <column name="ondutymen" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strThreenum">
+            <column name="threenum" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strShiftName">
+            <column name="shiftname" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strIn_Out_Type">
+            <column name="in_out_type" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strOp_Man_Id">
+            <column name="op_man_id" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strIscurrent">
+            <column name="iscurrent" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strIsaccept">
+            <column name="isaccept" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strAcceptTime">
+            <column name="accepttime" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strIsover">
+            <column name="isover" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strOverTime">
+            <column name="overtime" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strIsaffirm">
+            <column name="isaffirm" sql-type="string" 
+                    not-null="true"/>
+        </property>    
+        <property name="m_strAffirmtime">
+            <column name="affirmtime" sql-type="string" 
+                    not-null="false"/>
+        </property>  
+        <property name="m_strIslast">
+            <column name="islast" sql-type="string" 
+                    not-null="true"/>
+        </property> 
+        <property name="m_strPre_Shift_Id">
+            <column name="pre_shift_id" sql-type="string" 
+                    not-null="false"/>
+        </property> 
+
+     </class>
+</hibernate-mapping>
+

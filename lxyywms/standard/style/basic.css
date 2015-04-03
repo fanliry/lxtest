@@ -1,0 +1,54 @@
+/* 公共样式 */
+body {
+	overflow: scroll;
+  	overflow-x: auto;
+  	overflow-y: auto;
+    scrollbar-shadow-color: #EFEFEF;
+	scrollbar-highlight-color: #EFEFEF;
+	scrollbar-3dlight-color: #EFEFEF;
+	scrollbar-darkshadow-color: #EFEFEF;
+	scrollbar-track-color: #D4E4FD;
+	scrollbar-arrow-color: #375275;
+	scrollbar-base-color: #95BFF5;
+    margin-top: 0px; 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size:12px;
+    height:100%;
+    font-family:"宋体",Arial;
+    color:#000000;
+    background-color: #FFFFFF;
+}
+*{ margin:0; padding:0; border:none; list-style:none;}
+div{ margin:0 auto; padding:0;}
+input{ padding-top:2px;}
+.f_l{float:left;}
+.f_r{float:right;}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p,input{
+	margin:0; padding:0; border:none; list-style-type:none;
+}
+h2{ font-size:12px; text-align:center;  color:#034c98;}
+h3{ font-size:12px; color:#000; line-height:30px; text-indent:20px;}
+
+
+/* 登录界面样式*/
+.login_body{min-height:1%; line-height:150%; background:url(../images/login_bg.jpg) repeat-x 0px -80px; background-color:#d0efff; }
+.login_bg{width:100%;  height:568px;margin:0 auto; background:url(../images/btn_login1.jpg) no-repeat  center -80px; }
+.input_name{width:126px;padding:257px 0 0 287px;}
+.input_st{ width:121px; height:18px; border:0; padding-left:3px;}
+
+.con_bk{ height:100%; width:100%; border:1px #b2d6ec solid;  background:#FFF; }
+/* 当前位置*/
+.wz{ height:27px; line-height:27px; background:url(../images/wz_bg.jpg) repeat-x;  font-size:12px;}
+#dqwz{background:url(../images/indpic.gif) no-repeat 5px 4px ; text-indent:30px;}
+
+.xtcd{padding:10px 0; height:127px;}
+.xtcd ul{ padding:0 20px;}
+.xtcd ul li{ width:80px; text-align:center; margin:5px 0; float:left;}
+.xtcd ul li p{ line-height:30px;}
+
+.xtbz{  background:url(../images/xtbz_bg.jpg) no-repeat; height:167px; padding-top:10px;}
+.xtbz ul{ padding:0 20px;}
+.xtbz ul li{ width:80px; text-align:center; margin:5px 0; float:left;}
+.xtbz ul li p{ line-height:30px;}

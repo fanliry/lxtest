@@ -1,0 +1,54 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* CSS Document */
+body {
+	background: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+	overflow: scroll;
+  	overflow-x: auto;
+  	overflow-y: auto;
+    scrollbar-shadow-color: #EFEFEF;
+	scrollbar-highlight-color: #EFEFEF;
+	scrollbar-3dlight-color: #EFEFEF;
+	scrollbar-darkshadow-color: #EFEFEF;
+	scrollbar-track-color: #D4E4FD;
+	scrollbar-arrow-color: #375275;
+	scrollbar-base-color: #95BFF5;
+    margin-top: 0px; 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    height:100%;
+    color: #006699;
+}
+
+
+
+.flexigrid div.fbutton .add {
+	background: url(tab/add.png) no-repeat center left;
+}
+
+.flexigrid div.fbutton .delete {
+    background: url(tab/close.png) no-repeat center left;
+}
+
+.flexigrid div.fbutton .edit {
+	background: url(tab/edit.png) no-repeat center left;
+}

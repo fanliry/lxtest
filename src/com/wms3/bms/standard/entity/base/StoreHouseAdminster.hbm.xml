@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+
+    <class name="com.wms3.bms.standard.entity.base.StoreHouseAdminster"  
+           table="storeHouseAdminster"
+           dynamic-update="true"
+           dynamic-insert="true">
+        <id name="m_storeHouseAdminsterId" type="string" 
+            unsaved-value="null">
+            <column name="storeHouseAdminsterId" sql-type="char(38)" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>        
+        <property name="m_storeHouseNumber">
+            <column name="storeHouseNumber" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_storeHouseName">
+            <column name="storeHouseName" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_describe">
+            <column name="describe" sql-type="string" 
+                    not-null="false"/>
+        </property>
+     </class>	
+</hibernate-mapping>

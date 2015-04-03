@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.inventory.InventoryQualityResultDetail" table="quality_result_detail" dynamic-update="true" dynamic-insert="true">
+    
+        <id name="m_strCheckResultDetailId" type="string" unsaved-value="null">
+            <column name="check_result_detail_id" sql-type="string" not-null="true"/>
+            <generator class="uuid"/>
+        </id>
+
+        <property name="m_strCheckResultId">
+            <column name="check_result_id" sql-type="int" not-null="true"/>
+        </property>
+        <property name="m_strProductId">
+            <column name="product_id" sql-type="string" not-null="true"/>
+        </property>
+        <property name="m_strPrintDate">
+            <column name="print_date" sql-type="string" not-null="true"/>
+        </property>
+        <property name="m_strNewProductStatus">
+            <column name="new_product_status" sql-type="string" not-null="true"/>
+        </property>
+        <property name="m_strOldProductStatus">
+            <column name="old_product_status" sql-type="string"/>
+        </property>
+        <property name="m_strLotNumber">
+            <column name="lotnumber" sql-type="string"/>
+        </property>
+        <property name="m_strInventoryid">
+            <column name="inventoryid" sql-type="string" not-null="true"/>
+        </property>
+        <property name="m_strCarspaceid">
+            <column name="carspaceid" sql-type="string"/>
+        </property>
+        <property name="m_strUnit">
+            <column name="unit" sql-type="string" not-null="false"/>
+        </property>
+        <property name="m_iProductNum">
+            <column name="product_num" sql-type="Double" not-null="true"/>
+        </property>
+        <property name="m_strProductName" formula="(select t.productname from base_product t where t.productid=product_id)"/>
+        <property name="m_strNewProductStatusName" formula="(select t.selecttext from base_type t where t.selectvalue=new_product_status and t.typevalue='wpzt')"/>
+        <property name="m_strOldProductStatusName" formula="(select t.selecttext from base_type t where t.selectvalue=old_product_status and t.typevalue='wpzt')"/>
+   		
+     </class>
+</hibernate-mapping>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+ <!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">   
+	<dwr> 
+		<allow>
+			<!-- 系统管理 -->
+			<create creator="new" javascript="selectView">
+				<param name="class" value="com.wms3.bms.standard.action.sys.SelectView"/>
+			</create>
+			<create creator="new" javascript="getTool">
+				<param name="class" value="com.wms3.bms.standard.action.sys.GetTool"/>
+			</create>
+			<create creator="new" javascript="userGroupTree">
+				<param name="class" value="com.ricosoft.action.competenceMgr.UserGroupView"/>
+			</create>
+			<create creator="new" javascript="menuTree">
+				<param name="class" value="com.ricosoft.action.competenceMgr.ModuleTreeView"/>
+			</create>
+			<create creator="new" javascript="judgmentTool">
+				<param name="class" value="com.wms3.bms.standard.action.sys.JudgmentTool"/>
+			</create>
+			<create creator="new" javascript="sequenceMgr">
+				<param name="class" value="com.wms3.bms.standard.action.sys.SequenceMgr"/>
+			</create>
+			<!-- 基础信息 -->
+			<create creator="new" javascript="inspectClass">
+				<param name="class" value="com.wms3.bms.standard.action.base.InspectClass"/>
+			</create>
+			<create creator="new" javascript="cargoSpaceTree">
+				<param name="class" value="com.wms3.bms.standard.action.base.ajaxTree.CargoSpaceTreeView"/>
+			</create>
+			<create creator="new" javascript="lotTool">
+				<param name="class" value="com.wms3.bms.standard.action.base.LotTool"/>
+			</create>
+			<convert converter="bean" match="com.ricosoft.common.dwr.ModuleBean"></convert>
+			<convert converter="bean" match="com.ricosoft.common.dwr.TreeBean"/>
+			<convert converter="bean" match="com.wms3.bms.standard.entity.base.BaseLotDetail"/>
+			<convert converter="bean" match="com.wms3.bms.standard.entity.base.BaseProduct"/>   
+			
+		</allow>
+	</dwr>
+
+<!--
+<create> 标签中指定 javascript 中可以访问的 java 类，并定义 DWR 应当如何获得要进行远程的类的实例。 creator="new" 属性指定 java 类实例的生成方式， new 意味着 DWR 应当调用类的默认构造函数来获得实例，其他的还有 spring 方式，通过与 IOC 容器 Spring 进行集成来获得实例等等。 javascript=" testClass " 属性指定 javascript代码访问对象时使用的名称。
+<param> 标签指定要公开给 javascript 的 java 类名。
+<include> 标签指定要公开给 javascript 的方法。不指定的话就公开所有方法。
+<exclude> 标签指定要防止被访问的方法。
+-->

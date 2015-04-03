@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.outerInterface.SaleForm"  
+           table="sale_form"
+           dynamic-update="true"
+           dynamic-insert="true"
+           >
+           
+        <id name="m_strSaleFormId" type="string" unsaved-value="null">
+            <column name="sale_form_id" sql-type="string" 
+                    not-null="true"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="m_strSaleFormType">
+            <column name="type" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strCustomerId">
+            <column name="customer_id" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strDownTime">
+            <column name="down_time" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strIsOut">
+            <column name="is_out" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strIsFinish">
+            <column name="is_finish" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strIsInvalid">
+            <column name="is_invalid" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strCustomerName" formula="(select t.customername from base_customer t where t.customerid=customer_id)"/>
+        <property name="m_strSaleFormTypeName" formula="(select t.typename from base_type t where t.typevalue='ddlx' and t.selectvalue=type) "/>
+     </class>
+</hibernate-mapping>
+

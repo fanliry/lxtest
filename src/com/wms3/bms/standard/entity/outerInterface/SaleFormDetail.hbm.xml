@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.outerInterface.SaleFormDetail"  
+           table="sale_form_detail"
+           dynamic-update="true"
+           dynamic-insert="true"
+           >
+        
+        <id name="m_strSaleFormDetailId" type="string" unsaved-value="null">
+            <column name="sale_form_detail_id" sql-type="string" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>
+        
+        <property name="m_strSaleFormId">
+            <column name="sale_form_id" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strPackageId">
+            <column name="package_id" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strPrintDate">
+            <column name="print_date" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        <property name="m_strBatch">
+            <column name="m_strBatch" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strProductStatus">
+            <column name="m_strProductStatus" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_iSaleNum" type="double">
+            <column name="sale_num" precision="14" scale="4" />
+        </property>
+        <property name="m_iOutNum" type="double">
+            <column name="out_num" precision="14" scale="4" />
+        </property>
+        <property name="m_strPackageName" formula="(select t.productname from base_product t where t.productid=package_id)"/>
+        <property name="spec" formula="(select t.spec from base_product t where t.productid=package_id)"/>
+   		<property name="m_strUnit" formula="(select t.recunit from base_product t where t.productid=package_id)"/>
+   		<property name="m_strProductStatusName"  formula="(select t.selecttext from base_type t where t.selectvalue=m_strProductStatus and t.typevalue='wpzt')"/>
+   		
+     </class>
+</hibernate-mapping>
+

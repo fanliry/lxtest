@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<Config>
+  <!-- 数据库连接参数-->
+  <DSInfo Total="1">
+    <!--下面可以有多个数据源-->
+    <HiberDs>hzDs3</HiberDs>
+    <!--连接池-->
+    <DataSource id="1">
+      <Label>前置机数据库</Label>
+      <Name>hzDs1</Name>
+      <ConnPara>
+        <DriverClassName>oracle.jdbc.driver.OracleDriver</DriverClassName>
+        <URLPREFIX>jdbc:oracle:thin:@</URLPREFIX>
+        <DBHost>127.0.0.1</DBHost>
+        <DBPort>1521</DBPort>
+        <DBSID>ricosid</DBSID>
+        <DBUserName>landlord</DBUserName>
+        <DBPassword>landlord</DBPassword>
+        <MaxActive>50</MaxActive>
+        <MaxWait>5000</MaxWait>
+        <PingQuery>select sysdate from dual</PingQuery>
+      </ConnPara>
+    </DataSource>
+    <DataSource id="2">
+      <Label>sqlServer2000数据库</Label>
+      <Name>yiwudabao</Name>
+       <ConnPara>
+        <DriverClassName>com.microsoft.jdbc.sqlserver.SQLServerDriver</DriverClassName>
+        <URLPREFIX>jdbc:microsoft:sqlserver://</URLPREFIX>
+        <DBHost>192.168.1.18</DBHost>
+        <!--PROJECTSERVER为实例名-->        
+        <DBPort>1433</DBPort>
+        <!--default is 1433-->
+        <DBSID>DatabaseName=Huading</DBSID>
+        <DBUserName>sa</DBUserName>
+        <DBPassword>Hd123456</DBPassword>
+        <MaxActive>10</MaxActive>
+        <MaxWait>9000</MaxWait>
+        <PingQuery/>
+      </ConnPara>
+    </DataSource>
+    <DataSource id="3">
+      <Label>sqlServer2000数据库</Label>
+      <Name>hzDs3</Name>
+       <ConnPara>
+        <DriverClassName>com.microsoft.jdbc.sqlserver.SQLServerDriver</DriverClassName>
+        <URLPREFIX>jdbc:microsoft:sqlserver://</URLPREFIX>
+        <DBHost>192.168.99.230</DBHost>
+        <!-- <DBHost>127.0.0.1</DBHost> -->   
+        <DBPort>1433</DBPort>
+        <DBSID>DatabaseName=lxyywms</DBSID>
+        <DBUserName>sa</DBUserName>
+        <DBPassword>123456</DBPassword>
+        <MaxActive>10</MaxActive>
+        <MaxWait>9000</MaxWait>
+        <PingQuery>select 1</PingQuery>
+      </ConnPara>
+    </DataSource>
+    <DataSource id="4">
+      <Label>mysql数据库</Label>
+      <Name>hzDs4</Name>
+       <ConnPara>
+        <DriverClassName>com.mysql.jdbc.Driver</DriverClassName>
+        <URLPREFIX>jdbc:mysql://</URLPREFIX>
+        <DBHost>192.168.0.18</DBHost>   
+        <DBPort>3306</DBPort>
+        <DBSID>d2cityman</DBSID>
+        <DBUserName>root</DBUserName>
+        <DBPassword>123456</DBPassword>
+        <MaxActive>10</MaxActive>
+        <MaxWait>9000</MaxWait>
+        <PingQuery/>
+      </ConnPara>
+    </DataSource>
+   </DSInfo>
+  <!--关联配置文件名-->
+  <configFile>
+    <actionRelation>actionRelation.xml</actionRelation>
+  </configFile>
+  <!--监控系统关联地址 -->
+  <url>
+		<dmmsurl>http://127.0.0.1:80/wmsdmms</dmmsurl>
+  </url>
+  <forwardurl>com.wms3.bms.standard.constant.StandardConstant</forwardurl>
+</Config>

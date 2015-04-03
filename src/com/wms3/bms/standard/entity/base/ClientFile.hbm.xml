@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+
+    <class name="com.wms3.bms.standard.entity.base.ClientFile"  
+           table="clientFile"
+           dynamic-update="true"
+           dynamic-insert="true">
+        <id name="m_clientFileId" type="string" 
+            unsaved-value="null">
+            <column name="clientFileId" sql-type="char(38)" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>        
+        <property name="m_clientName">
+            <column name="clientName" sql-type="string" 
+                    not-null="true"/>
+        </property>
+        
+        <property name="m_clientNumber">
+            <column name="clientNumber" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_userNumber">
+            <column name="userNumber" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+         <property name="m_fullName">
+            <column name="fullName" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+         <property name="m_accountNumber">
+            <column name="accountNumber" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_criterionSort">
+            <column name="criterionSort" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_linkman">
+            <column name="linkman" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_phone">
+            <column name="phone" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_fax">
+            <column name="fax" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_address">
+            <column name="address" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_accountBrank">
+            <column name="accountBrank" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+        <property name="m_ratePayingNumber">
+            <column name="ratePayingNumber" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        
+         <property name="m_reveal">
+            <column name="reveal" sql-type="string" 
+                    not-null="false"/>
+     	</property>
+		<property name="m_describe">
+            <column name="describe" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="m_strOutId">
+            <column name="out_id" sql-type="string" 
+                    not-null="false"/>
+        </property>
+     </class>	
+</hibernate-mapping>

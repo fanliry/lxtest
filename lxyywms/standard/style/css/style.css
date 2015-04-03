@@ -1,0 +1,283 @@
+body {
+	overflow: scroll;
+  	overflow-x: auto;
+  	overflow-y: auto;
+    scrollbar-shadow-color: #EFEFEF;
+	scrollbar-highlight-color: #EFEFEF;
+	scrollbar-3dlight-color: #EFEFEF;
+	scrollbar-darkshadow-color: #EFEFEF;
+	scrollbar-track-color: #D4E4FD;
+	scrollbar-arrow-color: #375275;
+	scrollbar-base-color: #cfdbf3;
+    margin-top: 0px; 
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size:12px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #0030FF; TEXT-DECORATION: none
+}
+A:hover {
+	RIGHT: 0px; COLOR: #0030FF; position: relative; left:0px; top:-1px; TEXT-DECORATION: none
+}
+
+form {
+	margin: 0px;
+}
+
+input {
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #b3c2d8;
+}
+
+.input_radio {
+	font-size: 12px;
+	color: #000000;
+	border: 0px solid #b3c2d8;
+}
+.input_checkbox {
+	font-size: 12px;
+	color: #000000;
+	border: 0px solid #b3c2d8;
+}
+textarea {
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #b3c2d8;
+}
+.rf_select {
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #b3c2d8;
+	width: 162px;
+}
+.rf_input_short {
+	font-size: 12px;
+	border: 1px solid #b3c2d8;
+	width: 138px;
+}
+.rf_input_short2 {
+	font-size: 12px;
+	border: 1px solid #b3c2d8;
+	width: 104px;
+}
+.rf_input_long {
+	font-size: 12px;
+	border: 1px solid #b3c2d8;
+	width: 162px;
+}
+select{
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #b3c2d8;
+}
+
+.font_red_12 {
+	font-size: 12px;
+	color: red;
+}
+.font_990000_12 {
+	font-size: 12px;
+	color: #990000;
+}
+.font_006699_12 {
+	font-size: 12px;
+	color: #000000;
+}
+.font_006699_bold_12 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.font_006699_bold {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+.font_FFFFFF_bold {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.font_003333 {
+	font-size: 12px;
+	color: #003333;
+}
+.font_003333_bold {
+	font-size: 12px;
+	font-weight: bold;
+	color: #003333;
+}
+.font_001F56_bold_12 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #001F56;
+}
+.font_001F56_12 {
+	font-size: 12px;
+	color: #001F56;
+}
+.button_select{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	height: 18px;
+	width: 18px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#B7D3FA);
+	}
+.BUTTON_STYLE{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA);
+ 	background-repeat: no-repeat;
+ 	background-position: 3px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+.BUTTON_STYLE1{
+	text-align: center;
+	border:1px #888888 solid;
+ 	padding:3px 3px 0px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+.SUBMIT_STYLE1{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+ 	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#9DBCEA);
+}
+.form1{
+	margin:0px;
+}
+/*==== 新增按钮样式 ====*/
+.button_add{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	background-image: url(../images/ico_add.gif);
+ 	background-repeat: no-repeat;
+ 	background-position: 3px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+
+/*==== 编辑按钮样式 ====*/
+.button_edit{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	background-image: url(../images/ico_edit.gif);
+ 	background-repeat: no-repeat;
+ 	background-position: 3px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+/*==== 删除按钮样式 ====*/
+.button_delete{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	background-image: url(../images/ico_delete.gif);
+ 	background-repeat: no-repeat;
+ 	background-position: 3px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+/*==== 查找按钮样式 ====*/
+.button_search{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	background-image: url(../images/ico_search.gif);
+ 	background-repeat: no-repeat;
+ 	background-position: 3px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+/*==== 重置按钮样式 ====*/
+.button_reset{
+	BORDER-TOP: #888888 1px solid;
+	BORDER-BOTTOM: #888888 1px solid;
+	BORDER-LEFT: #888888 1px solid;
+ 	BORDER-RIGHT: #888888 1px solid;
+ 	PADDING-TOP: 2px;
+ 	PADDING-LEFT: 2px;
+ 	PADDING-RIGHT: 2px;
+ 	background-image: url(../images/ico_reset.gif);
+ 	background-repeat: no-repeat;
+ 	background-position: 3px;
+ 	background-color: #ddddff;
+ 	CURSOR: hand;
+ 	COLOR: black;
+ 	FONT-SIZE: 12px;
+}
+
+ .Wdate{
+ 	    border: 1px solid #b3c2d8;
+        height:18px;
+        background:url(../images/calendar.gif) no-repeat right;
+  }
+  .WdateFmtErr{
+        font-weight:bold;
+        color:red;
+  }
+  .molike{
+ 	    border: 1px solid #b3c2d8;
+        height:18px;
+        background:url(../images/f.gif) no-repeat right;
+  }
+
+.fenye{color: #000000; font-size:12px; line-height:20px; }

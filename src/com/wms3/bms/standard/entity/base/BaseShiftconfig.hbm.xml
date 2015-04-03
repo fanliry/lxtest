@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.base.BaseShiftconfig"  
+           table="base_shiftconfig"
+           dynamic-update="true"
+           dynamic-insert="true"
+           >	
+        <id name="id" type="string" 
+            unsaved-value="null">
+            <column name="id" sql-type="string" 
+                    not-null="true"/>
+            <generator class="uuid.hex"/>
+        </id>        
+        <property name="timespace">
+            <column name="shift_timespace" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="type">
+            <column name="shift_type" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="inout">
+            <column name="shift_inout" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="opman1">
+            <column name="shift_opman1" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="onduty1">
+            <column name="shift_onduty1" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="opman2">
+            <column name="shift_opman2" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="onduty2">
+            <column name="shift_onduty2" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="opman3">
+            <column name="shift_opman3" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="onduty3">
+            <column name="shift_onduty3" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="opman4">
+            <column name="shift_opman4" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="onduty4">
+            <column name="shift_onduty4" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="opman5">
+            <column name="shift_opman5" sql-type="string" 
+                    not-null="false"/>
+        </property>
+        <property name="onduty5">
+            <column name="shift_onduty5" sql-type="string" 
+                    not-null="false"/>
+        </property>
+     </class>
+</hibernate-mapping>
+

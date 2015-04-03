@@ -1,0 +1,303 @@
+.outer_table {
+	border: 1px solid #c5def7;
+	border-collapse: collapse;
+}
+.outer_td {
+	border: 1px solid #c5def7;
+}
+.MAIN_TABLE{
+	border: 1px solid #b3c2d8;
+	border-collapse: collapse;
+}
+.MAIN_REPORT{
+	border-collapse: collapse;
+}
+.MAIN_TD{
+	FONT-SIZE: 12px;
+	font-weight:normal;
+	FONT-FAMILY:"宋体",Arial;
+	color: #000000;
+	line-height: 20px;
+	border-top : 1px solid #b3c2d8 ; 
+	border-bottom : 1px solid #b3c2d8 ;
+	border-left : 1px solid #b3c2d8 ; 
+	border-right : 1px solid #b3c2d8;
+}
+.TABLE_MGR_TOP{
+	border: 1px solid #b3c2d8;
+	border-collapse: collapse;
+	width: 98%;
+	
+}
+.TD_MGR_TOP{
+   	 	FONT-SIZE: 12px;
+		font-weight:normal;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 20px;
+		border-top : 1px dashed #b3c2d8 ; 
+		border-bottom : 1px dashed #b3c2d8 ;
+		border-left : 1px dashed #b3c2d8 ; 
+		border-right : 1px dashed #b3c2d8;
+}
+
+.TABLE_LIST{
+	border: 1px solid #b3c2d8;
+	border-collapse: collapse;
+	width: 100%;
+}
+.TD_LIST{
+   	 	FONT-SIZE: 12px;
+		font-weight:normal;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 25px;
+		border-top : 1px dashed #b3c2d8 ; 
+		border-bottom : 1px dashed #b3c2d8 ;
+		border-left : 1px dashed #b3c2d8 ; 
+		border-right : 1px dashed #b3c2d8;
+}
+.TD_LIST_TITLE{
+   	 	FONT-SIZE: 12px;
+		font-weight:bold;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 22px;
+		border-top : 1px solid #b3c2d8 ; 
+		border-bottom : 1px solid #b3c2d8 ;
+		border-left : 1px solid #b3c2d8 ; 
+		border-right : 1px solid #b3c2d8;
+		background: url(../../images/wz_bg1.jpg) repeat-x 0 -1px;
+}
+.TD_LIST_REPORT{
+   	 	FONT-SIZE: 12px;
+		font-weight:normal;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 20px;
+		border-top : 1px solid #b3c2d8 ; 
+		border-bottom : 1px solid #b3c2d8 ;
+		border-left : 1px solid #b3c2d8 ; 
+		border-right : 1px solid #b3c2d8;
+}
+.TABLE_ADD{
+	border: 1px dashed #b3c2d8;
+	border-collapse: collapse;
+	width: 98%;
+}
+.outer_table {
+	border: 1px solid #c5def7;
+	border-collapse: collapse;
+}
+.outer_td {
+	border: 1px solid #c5def7;
+}
+.list_table {
+	border: 0px solid #7EBFE5;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.list_title_tr {
+	border: 1px solid #7EBFE5;
+	background-color: #DAEDFC;
+}
+.list_normal_td {
+	font: 12px;
+	font-weight: normal;
+	color: #001F56;
+	line-height: 20px;
+	text-align: center;
+	border-top : 1px dashed #b3c2d8 ; 
+	border-bottom : 1px dashed #b3c2d8 ;
+	border-left : 1px dashed #b3c2d8 ; 
+	border-right : 1px dashed #b3c2d8;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.list_title_td {
+	font: 12px;
+	font-weight: bold;
+	color: #001F56;
+	line-height: 20px;
+	text-align: center;
+	border-top: 0px;
+	border-bottom: 1px solid #c5def7;
+	border-left: 0px;
+	border-right: 1px solid #c5def7;
+	background-color:#CFEBFC;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.list_last_td {
+	font: 12px;
+	font-weight: normal;
+	color: #001F56;
+	line-height: 20px;
+	text-align: center;
+	border-top: 1px solid #c5def7;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.TD_ADD{
+   	 	FONT-SIZE: 12px;
+		font-weight:normal;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 20px;
+		border-top : 1px dashed #b3c2d8 ; 
+		border-bottom : 1px dashed #b3c2d8 ;
+		border-left : 1px dashed #b3c2d8 ; 
+		border-right : 1px dashed #b3c2d8;
+}
+
+
+.TABLE_STYLE1{
+	border: 1px solid #b3c2d8;
+	border-collapse: collapse;
+	width: 98%;
+	
+}
+.TD_STYLE1{
+   	 	FONT-SIZE: 12px;
+		font-weight:normal;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 20px;
+		border-top : 1px dashed #b3c2d8 ; 
+		border-bottom : 1px dashed #b3c2d8 ;
+		border-left : 1px dashed #b3c2d8 ; 
+		border-right : 1px dashed #b3c2d8;
+}
+.TD_title1{
+   	 	FONT-SIZE: 12px;
+   	 	font-weight:bold;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 20px;
+		background-color:#E3F2FF; 
+		border-top : 1px solid #b3c2d8 ; 
+		border-bottom : 1px solid #b3c2d8 ;
+		border-left : 1px solid #b3c2d8 ; 
+		border-right : 1px solid #b3c2d8;
+}
+
+.TABLE_STYLE2{
+	border: 1px solid #b3c2d8;
+	border-collapse: collapse;
+	width: 98%;
+	
+}
+.TD_title2{
+   	 	FONT-SIZE: 12px;
+   	 	font-weight:bold;
+		FONT-FAMILY:"宋体",Arial;
+		color: #000000;
+		line-height: 20px;
+		background-color:#E3F2FF; 
+		border-top : 1px solid #b3c2d8 ; 
+		border-bottom : 1px solid #b3c2d8 ;
+		border-left : 1px solid #b3c2d8 ; 
+		border-right : 1px solid #b3c2d8;
+}
+.TD_STYLE2{
+   	 	FONT-SIZE: 12px;
+		font-weight:normal;
+		FONT-FAMILY:"宋体",Arial;
+		color: #003333;
+		line-height: 20px;
+		border-top : 1px solid #b3c2d8 ; 
+		border-bottom : 1px solid #b3c2d8 ;
+		border-left : 1px solid #b3c2d8 ; 
+		border-right : 1px solid #b3c2d8;
+}
+table{
+	font-size: 12px;
+}
+.TD_REPORT_TITLE {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "楷体_GB2312";
+	}
+.query_table {
+	border: 1px solid #c5def7;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.query_tr {
+	border: 1px solid #c5def7;
+}
+.query_td1 {
+	font: 12px;
+	font-weight: normal;
+	color: #001F56;
+	line-height: 20px;
+	border-top: 1px solid #c5def7;
+	border-bottom: 1px solid #c5def7;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: #EEF5FF;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.query_td2 {
+	font: 12px;
+	font-weight: normal;
+	color: #001F56;
+	line-height: 20px;
+	border-top: 1px solid #c5def7;
+	border-bottom: 1px solid #c5def7;
+	border-left: 0px;
+	border-right: 0px;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.add_table {
+	border: 1px solid #7EBFE5;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.add_tr {
+	border: 1px solid #7EBFE5;
+}
+.add_td1 {
+	font: 12px;
+	font-weight: normal;
+	color: #001F56;
+	line-height: 20px;
+	border-top: 1px solid #c5def7;
+	border-bottom: 1px solid #c5def7;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: #EEF5FF;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.add_td2 {
+	font: 12px;
+	font-weight: normal;
+	color: #001F56;
+	line-height: 20px;
+	border-top: 1px solid #c5def7;
+	border-bottom: 1px solid #c5def7;
+	border-left: 0px;
+	border-right: 0px;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

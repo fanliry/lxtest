@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.base.BaseLotSet"  
+           table="base_lot_set"
+           dynamic-update="true"
+           dynamic-insert="true"
+           >	
+        <id name="lotattid" type="string">
+            <column name="lotattid" length="32" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="lotid" type="string">
+            <column name="lotid" length="50" />
+        </property>
+        <property name="lotname" type="string">
+            <column name="lotname" length="50" />
+        </property>
+        <property name="islot" type="string">
+            <column name="islot" length="50" />
+        </property>
+        <property name="lotseq" type="int">
+            <column name="lotseq" />
+        </property>
+        <property name="lottype" type="string">
+            <column name="lottype" length="50" />
+        </property>
+        <property name="remark" type="string">
+            <column name="remark" length="200" />
+        </property>
+        
+        <property name="lottypename" formula="(select t.selecttext from base_type t where t.selectvalue=lottype and t.typevalue='pclx')"/>
+     </class>
+</hibernate-mapping>
+

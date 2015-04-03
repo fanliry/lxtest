@@ -1,0 +1,31 @@
+/* CSS Document */
+
+*{ margin:0px; border:0px; padding:0px; list-style:none;}
+.menu { width:100%;height:100%;background:#ffffff; font-size:12px;overflow: scroll;overflow-x: hidden;overflow-y: scroll;
+    scrollbar-shadow-color: #EFEFEF;
+	scrollbar-highlight-color: #EFEFEF;
+	scrollbar-3dlight-color: #EFEFEF;
+	scrollbar-darkshadow-color: #EFEFEF;
+	scrollbar-track-color: #D4E4FD;
+	scrollbar-arrow-color: #375275;
+	scrollbar-base-color: #cfdbf3;
+}
+.menu h1{ width:159px; height:29px; margin:0 auto 0px; background:url(../images/zjgy_10.jpg) no-repeat; text-indent:-10000px;}
+A:link {text-decoration:none;color:#333 ;}
+A:visited {text-decoration:none;color:#333;}
+A:hover {text-decoration:none;color:#FF0000;}
+A:active {text-decoration:none;color:#FF0000;}
+.p {margin-left:10px;}
+.ps {margin-left:10px;display:none;}
+.pss {margin-left:10px;display:block;}
+.t {cursor:pointer;background:url(../images/ico080426_close.gif) no-repeat;line-height:20px;padding-left:20px;height:20px;}
+.f {cursor:pointer;background:url(../images/ico080426_dot.gif) no-repeat;line-height:25px;padding-left:20px;height:25px;border-bottom:1px #ccc dashed;}
+.dot {cursor:pointer;background:url(../images/ico080426_open.gif) no-repeat;line-height:25px;padding-left:20px;height:25px;border-bottom:1px #ccc dashed;	}
+.b {cursor:pointer;background:url(../images/ico080426_dot.gif) no-repeat;line-height:25px;padding-left:20px;height:25px;border-bottom:1px #ccc dashed;
+}
+.fblod {height:34px; font-size:12px;font-weight:bold; line-height:34px; text-indent:45px; margin:5px auto 0px;}
+.padtb8 {padding:6px 0; width:145px; margin:0 auto; }
+.fontred {color:#f00;}
+
+.tcwz{ font-size:12px; font-weight:bold; padding-bottom:4px;}
+.tcwz span{ font-weight:normal;}

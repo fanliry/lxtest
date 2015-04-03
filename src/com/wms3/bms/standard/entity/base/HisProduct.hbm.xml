@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"
+	> 
+
+<hibernate-mapping>
+    <class name="com.wms3.bms.standard.entity.base.HisProduct" table="his_product" dynamic-update="true" dynamic-insert="true">
+    
+        <id name="m_strHisProductId" type="string" unsaved-value="null">
+            <column name="his_product_id" sql-type="string" not-null="true"/>
+            <generator class="uuid"/>
+        </id>
+        
+        <property name="m_strOutType">
+            <column name="out_type" sql-type="string" not-null="true"/>
+        </property>
+        <property name="m_strFlag">
+            <column name="flag" sql-type="string" not-null="true"/>
+        </property>
+        <property name="m_strTypeVale">
+            <column name="type_vale" sql-type="string" not-null="true"/>
+        </property>
+        
+		<property name="m_strTypeValeName" formula="(select t.selecttext from base_type t where t.selectvalue=type_vale and t.typevalue=flag)"/>
+		
+     </class>
+</hibernate-mapping>
+
