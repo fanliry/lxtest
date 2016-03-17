@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="lxtest">
-        <wb-resource deploy-path="/" source-path="/lxyywms" tag="defaultRootSource"/>
-        <property name="context-root" value="/lxyywms"/>
-        <property name="java-output-path" value="/lxtest/lxyywms/WEB-INF/classes"/>
-        <property name="me-merge-utility-modules" value="true"/>
-    </wb-module>
-</project-modules>
